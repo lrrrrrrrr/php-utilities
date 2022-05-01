@@ -48,7 +48,7 @@ class RandHelpersTest extends TestCase
         $this->assertEquals(20, mb_strlen($result), 'String has proper length');
 
         for ($i = 0; $i < mb_strlen($result); ++$i) {
-            $this->assertContains($result[$i], $chars, 'Character not in list');
+            $this->assertContains($result[$i], str_split($chars), 'Character not in list');
         }
     }
 
