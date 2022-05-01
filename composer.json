@@ -32,5 +32,6 @@
         "platform": {
             "php": "8"
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
